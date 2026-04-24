@@ -1,15 +1,11 @@
 { pkgs, lib, ... }: {
 
+    imports = [
+        ./networking.nix
+    ];
+
     boot.kernelPackages = pkgs.linuxPackages_zen;
     boot.initrd.systemd.enable = lib.mkForce false;
-
-    networking = {
-        networkmanager = {
-            enable = true;
-            wifi.scanRandMacAddress = true;
-        };
-        firewall.enable = true;
-    };
 
     environment.systemPackages = with pkgs; [
         fastfetch
