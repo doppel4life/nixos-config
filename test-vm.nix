@@ -3,6 +3,7 @@
     imports = [
         ./modules/networking.nix
         ./modules/systemPackages.nix
+        ./modules/nvf.nix
     ];
 
     boot.kernelPackages = pkgs.linuxPackages_zen;

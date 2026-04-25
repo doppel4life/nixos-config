@@ -6,9 +6,5 @@
         tmux
         git
         go
-        pyright
-        gopls
-        nil
-        tinymist
     ];
 }
