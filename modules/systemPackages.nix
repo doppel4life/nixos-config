@@ -7,7 +7,8 @@
         git
         go
         pyright
-        gols
+        gopls
+        nil
         tinymist
     ];
 }
