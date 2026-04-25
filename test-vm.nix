@@ -27,6 +27,10 @@
 
     home-manager = {
         extraSpecialArgs = { inherit inputs;};
+        useGlobalPkgs = true;
+        useUserPackages = true;
+        backupFileExtension = "backup"; 
+
         users."doppel-vm" = import ./user_conf/doppel-vm/home.nix;
     };
     nix.settings.experimental-features = ["nix-command" "flakes"];
