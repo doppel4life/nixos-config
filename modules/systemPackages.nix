@@ -6,6 +6,8 @@
         tmux
         git
         go
-        npm
+        nodejs
+        cargo
+        unzip
     ];
 }
