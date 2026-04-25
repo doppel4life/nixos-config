@@ -19,15 +19,7 @@
         modules = [
         ./test-vm.nix
         home-manager.nixosModules.home-manager
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            users.doppel-vm = import ./user_conf/doppel-vm/home.nix;
-            backupFileExtension = "backup";
-          };
-        }
-      ];
+     ];
     };
 
   };
