@@ -5,5 +5,7 @@
         neovim
         tmux
         git
+        go
+        npm
     ];
 }
