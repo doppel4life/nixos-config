@@ -9,11 +9,6 @@
     boot.kernelPackages = pkgs.linuxPackages_zen;
     boot.initrd.systemd.enable = lib.mkForce false;
 
-    #environment.systemPackages = with pkgs; [
-    #fastfetch
-    #btop
-    #];
-
     programs.fish.enable = true;
     users.defaultUserShell = pkgs.fish;
     users.users.doppel-vm = {
