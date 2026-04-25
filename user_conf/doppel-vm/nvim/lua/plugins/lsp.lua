@@ -13,6 +13,7 @@ return {
       })
 
       vim.lsp.config('*', {
+        capabilities = capabilities,
         on_attach = function(_, bufnr)
           local nmap = function(keys, func, desc)
             vim.keymap.set('n', keys, func, { buffer = bufnr, desc = 'LSP: ' .. desc })
