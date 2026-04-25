@@ -26,6 +26,7 @@
             users.tony = import ./user_conf/doppel-vm/home.nix;
             backupFileExtension = "backup";
           };
+        }
       ];
     };
 
