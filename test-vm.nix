@@ -1,8 +1,9 @@
-{ pkgs, lib, ... }: {
+{ pkgs, lib, inputs,... }: {
 
     imports = [
         ./modules/networking.nix
         ./modules/systemPackages.nix
+        inputs.home-manager.flakeModules.home-manager
     ];
 
     boot.kernelPackages = pkgs.linuxPackages_zen;
@@ -30,6 +31,10 @@
         }];
     };
 
+    home-manager = {
+        extraSpecialArgs = { inherit inputs;};
+        users."doppel-vm" = import ./user_conf/doppel-vm/home.nix;
+    };
     nix.settings.experimental-features = ["nix-command" "flakes"];
     system.stateVersion = "26.05";
 }
