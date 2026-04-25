@@ -8,10 +8,11 @@
             inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
+    nvf.url = "github:NotAShelf/nvf";
   };
 
 
-  outputs = { self, nixpkgs, home-manager,... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, nvf,... }@inputs: {
 
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
