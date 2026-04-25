@@ -7,8 +7,14 @@
         source = ./fish;
         recursive = true;
     };
+
     home.file.".config/nvim" = {
         source = ./nvim;
+        recursive = true;
+    };
+
+    home.file.".tmux.conf" = {
+        source = ./tmux_config;
         recursive = true;
     };
 }

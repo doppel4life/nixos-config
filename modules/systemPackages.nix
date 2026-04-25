@@ -3,5 +3,7 @@
         fastfetch
         btop
         neovim
+        tmux
+        git
     ];
 }
