@@ -2,24 +2,24 @@ vim.opt.termguicolors = true
 
 -- Nord palette
 local nord = {
-  bg        = "#292E39",
-  bg_dark   = "#262B35",
-  fg        = "#D8DEE9",
-  fg_dark   = "#4C566A",
-  red       = "#BF616A",
-  green     = "#A3BE8C",
-  yellow    = "#EBCB8B",
-  blue      = "#81A1C1",
-  magenta   = "#B48EAD",
-  cyan      = "#88C0D0",
-  orange    = "#D08770",
+  bg        = "#282828",
+  bg_dark   = "#1D2021",
+  fg        = "#ebdbb2",
+  fg_dark   = "#a89984",
+  red       = "#CC241D",
+  green     = "#98971A",
+  yellow    = "#d79921",
+  blue      = "#458588",
+  magenta   = "#B16285",
+  cyan      = "#689D6A",
+  orange    = "#d65d0e",
 }
 
 -- Clear & reset
 vim.cmd("highlight clear")
 vim.cmd("syntax reset")
 vim.o.background = "dark"
-vim.g.colors_name = "nord_custom"
+vim.g.colors_name = "gruvbox_custom"
 
 local hl = vim.api.nvim_set_hl
 
