@@ -1,9 +1,11 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    event = {"BufReadPre", "BufNewFile"}
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
+      "saghen/blink.cmp"
     },
     config = function()
       require("mason").setup()
@@ -11,6 +13,8 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = { "lua_ls" }, 
       })
+
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
 
       vim.lsp.config('*', {
         capabilities = capabilities,
