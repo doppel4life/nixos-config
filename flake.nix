@@ -23,7 +23,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.tony = import ./user_conf/doppel-vm/home.nix;
+            users.doppel-vm = import ./user_conf/doppel-vm/home.nix;
             backupFileExtension = "backup";
           };
         }

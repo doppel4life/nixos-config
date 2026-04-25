@@ -3,7 +3,6 @@
     imports = [
         ./modules/networking.nix
         ./modules/systemPackages.nix
-        inputs.home-manager.flakeModules.home-manager
     ];
 
     boot.kernelPackages = pkgs.linuxPackages_zen;
