@@ -6,8 +6,8 @@
         tmux
         git
         go
-        nodejs
-        cargo
-        unzip
+        pyright
+        gols
+        tinymist
     ];
 }

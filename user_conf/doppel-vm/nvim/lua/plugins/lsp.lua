@@ -25,7 +25,7 @@ return {
       }
 
       require("mason-lspconfig").setup({
-        ensure_installed = vim.tbl_keys(servers),
+        ensure_installed = { "lua_ls" },
       })
 
       -- The New Standard: Use vim.lsp.config directly
