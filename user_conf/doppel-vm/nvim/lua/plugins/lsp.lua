@@ -4,37 +4,31 @@ return {
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
-      "folke/neodev.nvim", -- Enhanced Lua development for Neovim
+      "folke/neodev.nvim",
     },
     config = function()
-      -- Setup helper for Neovim Lua development
       require("neodev").setup()
-
-      -- Ensure Mason is initialized
       require("mason").setup()
 
       local servers = {
-        pyright = {},    -- Python
-        gopls = {},      -- Go
-        nil_ls = {},     -- Nix
-        lua_ls = {       -- Lua
+        pyright = {},
+        gopls = {},
+        nil_ls = {},
+        lua_ls = {
           settings = {
             Lua = {
-              completion = { callSnippet = "Replace" },
               diagnostics = { globals = { "vim" } },
             },
           },
         },
-        tinymist = {},   -- Typst (Current community favorite over typst-lsp)
+        tinymist = {},
       }
 
       require("mason-lspconfig").setup({
         ensure_installed = vim.tbl_keys(servers),
       })
 
-      local lspconfig = require("lspconfig")
-
-      -- Common on_attach function for keybindings
+      -- The New Standard: Use vim.lsp.config directly
       local on_attach = function(_, bufnr)
         local nmap = function(keys, func, desc)
           vim.keymap.set('n', keys, func, { buffer = bufnr, desc = 'LSP: ' .. desc })
@@ -46,13 +40,12 @@ return {
         nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
       end
 
-      -- Iterate through the servers and apply configurations
+      -- Iterate and setup using the new API
       for server_name, config in pairs(servers) do
-        lspconfig[server_name].setup({
-          settings = config.settings,
-          filetypes = config.filetypes,
+        -- This is the specific line that replaces require('lspconfig')[server].setup
+        vim.lsp.config(server_name, vim.tbl_extend("force", {
           on_attach = on_attach,
-        })
+        }, config))
       end
     end,
   },
