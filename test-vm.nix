@@ -1,6 +1,7 @@
 { pkgs, lib, inputs,... }: {
 
     imports = [
+        inputs.nvf.nixosModules.default 
         ./modules/networking.nix
         ./modules/systemPackages.nix
         ./modules/nvf.nix
