@@ -13,7 +13,7 @@
     ];
 
     users.users.doppel-vm = {
-        isnormaluser = true;
+        isNormalUser = true;
         extraGroups = [ "wheel" ];
     };
     users.defaultUserShell = pkgs.fish;
