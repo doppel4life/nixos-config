@@ -5,6 +5,8 @@
         ./modules/networking.nix
         ./modules/systemPackages.nix
         ./modules/nvf.nix
+
+        /etc/nixos/hardware-configuration.nix
     ];
 
     boot.kernelPackages = pkgs.linuxPackages_zen;
