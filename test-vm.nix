@@ -16,7 +16,7 @@
         isnormaluser = true;
         extragroups = [ "wheel" ];
     };
-    users.defaultusershell = pkgs.fish;
+    users.defaultUserShell = pkgs.fish;
     programs.fish.enable = true;
 
     security.sudo.enable = false;
