@@ -7,25 +7,17 @@
         ./modules/systemPackages.nix
         ./modules/nvf.nix
 
+        ./user_conf/doppel-vm/userPackages.nix
+
         /etc/nixos/hardware-configuration.nix
     ];
 
-    #boot.kernelPackages = pkgs.linuxPackages_zen;
-    #boot.initrd.systemd.enable = lib.mkForce false;
-    #
-    #boot.loader.systemd-boot = {
-    #enable = true;
-    #configurationLimit = 15;
-    #};
-    #
-    #boot.loader.efi.canTouchEfiVariables = true;
-
-    programs.fish.enable = true;
-    users.defaultUserShell = pkgs.fish;
     users.users.doppel-vm = {
-        isNormalUser = true;
-        extraGroups = [ "Wheel" ];
+        isnormaluser = true;
+        extragroups = [ "wheel" ];
     };
+    users.defaultusershell = pkgs.fish;
+    programs.fish.enable = true;
 
     security.sudo.enable = false;
     security.doas = {
