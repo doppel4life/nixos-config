@@ -2,6 +2,7 @@
 
     imports = [
         inputs.nvf.nixosModules.default 
+        ./modules/boot.nix
         ./modules/networking.nix
         ./modules/systemPackages.nix
         ./modules/nvf.nix
