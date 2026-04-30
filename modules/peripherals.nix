@@ -4,7 +4,7 @@
         layout = "fr";
         variant = "azerty";
     };
-    konsole.keymap = "fr";
+    console.keymap = "fr";
 
     services.printing.enable = true;
 
