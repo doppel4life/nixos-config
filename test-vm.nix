@@ -14,7 +14,7 @@
 
     users.users.doppel-vm = {
         isnormaluser = true;
-        extragroups = [ "wheel" ];
+        extraGroups = [ "wheel" ];
     };
     users.defaultUserShell = pkgs.fish;
     programs.fish.enable = true;
