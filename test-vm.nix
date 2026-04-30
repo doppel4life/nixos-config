@@ -5,6 +5,8 @@
         ./modules/boot.nix
         ./modules/networking.nix
         ./modules/systemPackages.nix
+        ./modules/locals.nix
+        ./modules/peripherals.nix
         ./modules/nvf.nix
 
         ./user_conf/doppel-vm/userPackages.nix
@@ -37,6 +39,9 @@
 
         users."doppel-vm" = import ./user_conf/doppel-vm/home.nix;
     };
+
+    nixpkgs.config.allowUnfree = true;
+
     nix.settings.experimental-features = ["nix-command" "flakes"];
     system.stateVersion = "26.05";
 }
