@@ -12,8 +12,9 @@
   color: @foreground;
 }
 
-#workspaces {
+#workspaces button {
   background-color : @background2;
+  border-radius : O;
   border-bottom : 3px solid transparent;
 }
 
@@ -21,7 +22,7 @@
   border-bottom : 3px solid @red;
 }
 
-#workspaces button.urgent {
+#workspaces button:not(.empty) {
   border-bottom: 3px solid @foreground;
 }
 
