@@ -7,6 +7,6 @@
         go
         tree
         wl-clipboard
-        dolphin
+        xfce.thunar
     ];
 }
