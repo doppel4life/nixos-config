@@ -8,6 +8,10 @@
     #recursive = true;
     #};
 
+    home.file.".config/waybar" = {
+        source = ./sway/waybar;
+        recursive = true;
+    };
     home.file.".config/fish/config.fish".source = ./fish/config.fish;
     home.file.".config/foot/foot.ini".source = ./foot/foot.ini;
     home.file.".config/git/config".source = ./git/config;
