@@ -7,5 +7,6 @@
         go
         tree
         wl-clipboard
+        dolphin
     ];
 }

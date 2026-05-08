@@ -47,7 +47,7 @@ set $menu wofi --show drun
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym Mod1+d exec $menu
+    bindsym Mod1+space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -205,10 +205,10 @@ bar {
 }
 
 #Styling
-gaps inner 5
-gaps outer 5
-default_border pixel 2
-default_floating_border pixel 2
+gaps inner 10
+gaps outer 10
+default_border pixel 3
+default_floating_border pixel 3
 client.focused           #fbf1c7 #fbf1c7 #ffffff #fbf1c7 #fbf1c7
 
 include @sysconfdir@/sway/config.d/*

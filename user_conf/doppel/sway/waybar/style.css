@@ -13,7 +13,6 @@
 }
 
 #workspaces {
-  border-radius: 0rem;
   background-color : @background2;
   border-bottom : 3px solid transparent;
 }
@@ -39,6 +38,7 @@
   background-color: @background2;
   color: @foreground;
   padding : 5px 5px;
+  margin : 0
 }
 
 #clock {
