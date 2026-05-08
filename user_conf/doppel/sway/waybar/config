@@ -7,10 +7,11 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
+        "sway/workspaces",
+        "sway/mode"
     ],
     "modules-center": [
-        "hyprland/window"
+        "sway/window"
     ],
     "modules-right": [
 	"mpd",
