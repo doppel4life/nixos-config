@@ -6,6 +6,6 @@
         git
         go
         tree
-        wl-copy
+        wl-clipboard
     ];
 }
