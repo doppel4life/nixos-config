@@ -13,21 +13,21 @@
 }
 
 #workspaces {
-  border-radius: 1rem;
+  border-radius: 0rem;
   margin: 5px;
   color: @background;
 }
 
 #workspaces button {
   background-color: @background;
-  border-radius: 4px;
+  border-radius: 0px;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
   background-color: @background2;
   border-bottom: 3px solid @color1;
-  border-radius: 1px;
+  border-radius: 0px;
 }
 
 
@@ -52,12 +52,12 @@
 
 #battery {
    color :@color2;
-   border-radius: 0px 3px 3px  0px;
+   border-radius: 0px 0px 0px  0px;
    border-bottom:3px solid @color2;
 }
 
 #battery.charging {
-    border-radius: 0px 3px 3px  0px;
+    border-radius: 0px 0px 0px  0px;
     border:2px solid #8ec07c;
     margin-right: 1rem;
     color :#8ec07c;
@@ -65,7 +65,7 @@
 
 #battery.warning:not(.charging) {
   color: #fb4934;
-  border-radius: 0px 3px 3px  0px;
+  border-radius: 0px 0px 0px  0px;
   border:2px solid #fb4934;
   margin-right: 1rem;
 }
@@ -81,7 +81,7 @@
 }
 
 #pulseaudio {
-  border-radius: 3px  0px 0px 3px;
+  border-radius: 0px  0px 0px 0px;
   margin-left: 4px;
 }
 
@@ -90,16 +90,16 @@
 }
 
 #custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
+    border-radius: 0rem 0px 0px 0rem;
 }
 
 #custom-power {
     border:2px solid #fb4934;
     margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
+    border-radius: 0px 0rem 0rem 0px;
 }
 
 #tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
+  margin-right: 0rem;
+  border-radius: 0rem;
 }
