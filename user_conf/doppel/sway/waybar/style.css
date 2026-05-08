@@ -18,14 +18,13 @@
   border-bottom : 3px solid transparent;
 }
 
-#workspaces button.focused {
-  border-bottom : 3px solid @red;
-}
-
 #workspaces button:not(.empty) {
   border-bottom: 3px solid @foreground;
 }
 
+#workspaces button.focused {
+  border-bottom : 3px solid @red;
+}
 
 #custom-music,
 #tray,
