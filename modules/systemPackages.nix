@@ -1,0 +1,9 @@
+{ pkgs, ... } : {
+    environment.systemPackages = with pkgs; [
+        fastfetch
+        neovim
+        tmux
+        git
+        go
+    ];
+}
