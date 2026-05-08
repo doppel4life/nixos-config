@@ -9,10 +9,9 @@
 #waybar {
   background: transparent;
   color: @foreground;
-  margin: 5px 5px;
 }
 
-#workspaces button {
+#workspaces {
   border-radius: 0rem;
   color: @background2;
   border-bottom : 3px solid transparent;
@@ -40,6 +39,7 @@
 #custom-power {
   background-color: @background2;
   color: @foreground;
+  padding : 5px 5px;
 }
 
 #clock {
