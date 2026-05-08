@@ -7,6 +7,6 @@
         go
         tree
         wl-clipboard
-        xfce.thunar
+        thunar
     ];
 }
