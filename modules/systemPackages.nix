@@ -6,5 +6,6 @@
         git
         go
         tree
+        wl-copy
     ];
 }
