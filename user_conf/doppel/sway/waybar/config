@@ -2,7 +2,7 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 8, // Waybar height (to be removed for auto height)
+    "height": 32, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -14,11 +14,11 @@
         "sway/window"
     ],
     "modules-right": [
-	"mpd",
+        "mpd",
+        "clock",
         "pulseaudio",
         "backlight",
-	"network",
-        "clock",
+        "network",
         "battery",
         "battery#bat2",
         "tray",
@@ -27,23 +27,7 @@
         "orentation": "inherit",
         "modules": ["clock"]
     },
-    // Modules configuration
-    //"hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -95,16 +79,16 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
+         "timezone": "Europe/Paris",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "[ {usage}%  ]",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "[ {}%  ]"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -116,7 +100,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "[ {percent}% {icon} ]",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -125,11 +109,11 @@
             "warning": 15,
             "critical": 5
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "[ {capacity}% {icon} ]",
+        "format-full": "[ {capacity}% {icon} ]",
+        "format-charging": "[ {capacity}% 󰚥 ]",
+        "format-plugged": "[ {capacity}%  ]",
+        "format-alt": "[ {time} {icon} ]",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -150,12 +134,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-wifi": "[ {essid} ({signalStrength}%) ]",
+        "format-ethernet": "[ {ipaddr}/{cidr} ]",
+        "tooltip-format": "[󰈀 {ifname} via {gwaddr} ]",
+        "format-linked": "[ {ifname} (No IP) ]",
+        "format-disconnected": "[󱚼 Disconnected ]",
+        "format-alt": "[ {ifname}: {ipaddr}/{cidr} ]"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
