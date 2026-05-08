@@ -14,7 +14,7 @@
 
 #workspaces button {
   background-color : @background2;
-  border-radius : Opx;
+  border-radius : 0;
   border-bottom : 3px solid transparent;
 }
 
