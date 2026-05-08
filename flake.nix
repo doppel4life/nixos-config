@@ -19,7 +19,7 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-        ./test-vm.nix
+        ./configuration.nix
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
      ];
