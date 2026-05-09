@@ -8,7 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
-        "sway/mode"
+        "sway/mode",
+        "sway/window"
     ],
 
     "sway/workspaces": {
@@ -29,7 +30,7 @@
     },
 
     "modules-center": [
-        "sway/window"
+        "clock"
     ],
     "modules-right": [
         "mpd",
@@ -102,7 +103,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "[{usage}%  ]",
+        "format": "[{usage}  ]",
         "tooltip": false
     },
     "memory": {

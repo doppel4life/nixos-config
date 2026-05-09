@@ -43,6 +43,7 @@
 
 #clock {
   color: @foreground;
+  border-bottom : 3px solid @foreground;
 }
 
 #battery {
