@@ -46,7 +46,7 @@
 #clock {
   color: @foreground;
   border-bottom : 3px solid @foreground;
-  font-weight : normal,
+  font-weight : normal;
 }
 
 #battery {
