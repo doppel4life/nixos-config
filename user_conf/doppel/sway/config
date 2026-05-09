@@ -12,7 +12,7 @@ set $menu wofi --show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in @datadir@/backgrounds/sway/)
-#output * bg @datadir@/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/doppel/project/nixos-config/user_conf/doppel/sway/wall.png fill
 #
 # Example configuration:
 #
