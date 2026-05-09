@@ -34,9 +34,10 @@
     ],
     "modules-right": [
         "mpd",
-        "clock",
         "pulseaudio",
         "backlight",
+        "cpu",
+        "memory",
         "network",
         "battery",
         "battery#bat2",
@@ -99,15 +100,16 @@
     },
     "clock": {
          "timezone": "Europe/Paris",
+         "format" : "{:%V %a %d %b, %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "[{usage}  ]",
+        "format": "[{usage} ]",
         "tooltip": false
     },
     "memory": {
-        "format": "[{}%  ]"
+        "format": "[{}% ]"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -119,7 +121,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "[ {percent}% {icon} ]",
+        "format": "[{percent}% {icon}]",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
@@ -162,7 +164,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "[ {volume}% {icon} {format_source} ]",
+        "format": "[{volume}% {icon} {format_source}]",
         "format-bluetooth": "[{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "[  {icon} {format_source}",
         "format-muted": "[  {format_source}",
