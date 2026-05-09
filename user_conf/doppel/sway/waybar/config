@@ -100,7 +100,7 @@
     },
     "clock": {
          "timezone": "Europe/Paris",
-         "format" : "{:S%V %a %d %b, %H:%M}",
+         "format" : "S{:%V %a %d %b, %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
