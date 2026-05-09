@@ -34,6 +34,8 @@
 #pulseaudio,
 #custom-lock,
 #network,
+#cpu,
+#memory,
 #custom-power {
   background-color: @background2;
   color: @foreground;
@@ -44,6 +46,7 @@
 #clock {
   color: @foreground;
   border-bottom : 3px solid @foreground;
+  font-weight : normal,
 }
 
 #battery {
@@ -66,11 +69,19 @@
 }
 
 #backlight {
-    color : @purple;
+    color : @yellow;
 }
 
 #pulseaudio {
     color : @orange;
+}
+
+#cpu {
+    color : @purple;
+}
+
+#memory {
+    color : @purple;
 }
 
 #custom-music {
