@@ -1,3 +1,5 @@
+style=/home/doppel/.config/wofi/style.css
+
 prompt=run...
 allow_images=true
 images_size=32
