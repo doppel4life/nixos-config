@@ -15,7 +15,7 @@
 
   outputs = { self, nixpkgs, home-manager, nvf, stylix,... }@inputs: {
 
-    nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.doppelnixer = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
