@@ -53,6 +53,8 @@ output * bg /home/doppel/project/nixos-config/user_conf/doppel/sway/wall.png fil
 
     bindsym $mod+b exec librewolf
 
+    bindsym Control+Shift+k exec systemctl poweroff
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
