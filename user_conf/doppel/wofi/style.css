@@ -9,11 +9,11 @@
 #window {
     border-radius = 0;
     border : 3px solid @foreground;
-    background-color : @background2;
+    background-color : @background;
 }
 
 #input {
     border-bottom = 1px;
-    background-color : @ background2;
+    background-color : @ background;
     padding: 10px;
 }

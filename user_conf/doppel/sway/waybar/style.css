@@ -55,12 +55,12 @@
 }
 
 #battery.charging {
-    color : @foreground;
+    color : @yellow;
     border-bottom : 3px solid @yellow;
 }
 
 #battery.warning:not(.charging) {
-  color : @foreground;
+  color : @red;
   border-bottom : 3px solid @red;
 }
 
@@ -69,11 +69,11 @@
 }
 
 #backlight {
-    color : @yellow;
+    color : @foreground;
 }
 
 #pulseaudio {
-    color : @orange;
+    color : @foreground;
 }
 
 #cpu {
