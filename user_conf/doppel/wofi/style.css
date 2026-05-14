@@ -11,3 +11,9 @@
     border : 3px solid @foreground;
     background-color : @background2;
 }
+
+#input {
+    border-bottom = 1px;
+    background-color : @ background2;
+    padding: 10px;
+}
