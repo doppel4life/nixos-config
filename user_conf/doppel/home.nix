@@ -17,4 +17,5 @@
     home.file.".config/git/config".source = ./git/config;
     home.file.".tmux.conf".source = ./tmux_config/tmux.conf;
     home.file.".config/sway/config".source = ./sway/config;
+    home.file.".config/wofi/config".source = ./wofi/config;
 }

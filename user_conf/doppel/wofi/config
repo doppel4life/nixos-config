@@ -1,0 +1,13 @@
+prompt=run...
+allow_images=true
+images_size=32
+
+location=top
+layer=top
+xofffset=-10
+width=30%
+height=30%
+
+matching=fuzzy
+insensitive=true
+sort_order=alphabetical

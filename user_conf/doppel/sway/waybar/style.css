@@ -55,12 +55,12 @@
 }
 
 #battery.charging {
-    color : @yellow;
+    color : @foreground;
     border-bottom : 3px solid @yellow;
 }
 
 #battery.warning:not(.charging) {
-  color : @red;
+  color : @foreground;
   border-bottom : 3px solid @red;
 }
 
