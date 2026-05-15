@@ -8,6 +8,8 @@ function fish_prompt
 	set_color cyan
 	printf "%s" (prompt_pwd)
 	set_color normal
+    set_color yellow
+    printf "%s" (fish_git_prompt)
 	printf " > "
 end
 
@@ -20,4 +22,7 @@ end
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    alias ga="git add ."
+    alias gc="git commit -m"
+    alias gp="git push -u origin"
 end
