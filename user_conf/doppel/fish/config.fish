@@ -7,9 +7,9 @@ function fish_prompt
 	printf " in "
 	set_color cyan
 	printf "%s" (prompt_pwd)
-	set_color normal
     set_color yellow
     printf "%s" (fish_git_prompt)
+	set_color normal
 	printf " > "
 end
 
@@ -25,4 +25,8 @@ if status is-interactive
     alias ga="git add ."
     alias gc="git commit -m"
     alias gp="git push -u origin"
+
+    alias nfu="doas nix flake update"
+    alias nrs="doas nixos-rebuild switch --impure --flake .#doppelnixer"
+    alias nda="doas nixos-rebuild dry-activate --impure --flake .#doppelnixer"
 end
