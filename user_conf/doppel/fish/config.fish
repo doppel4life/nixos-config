@@ -7,6 +7,8 @@ function fish_prompt
 	printf " in "
 	set_color cyan
 	printf "%s" (prompt_pwd)
+    set_color yellow
+    printf "%s" (fish_git_prompt)
 	set_color normal
 	printf " > "
 end
