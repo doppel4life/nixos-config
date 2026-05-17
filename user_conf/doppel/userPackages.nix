@@ -6,5 +6,6 @@
         zathura
         grim
         slurp
+        vlc
     ];
 }
