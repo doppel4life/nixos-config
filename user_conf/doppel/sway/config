@@ -55,6 +55,8 @@ output * bg /home/doppel/project/nixos-config/user_conf/doppel/sway/wall.png fil
 
     bindsym Control+Shift+k exec systemctl poweroff
 
+    bindsym Print exec grim -g "$(slurp)" - | /home/doppel/Pictures/screenshots/$(date + %Y%M%d_%H%M%S).png
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

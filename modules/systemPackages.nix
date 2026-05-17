@@ -7,6 +7,5 @@
         go
         tree
         wl-clipboard
-        thunar
     ];
 }

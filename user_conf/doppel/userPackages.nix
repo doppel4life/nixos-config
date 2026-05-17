@@ -4,5 +4,7 @@
         btop
         typst
         zathura
+        grim
+        slurp
     ];
 }
