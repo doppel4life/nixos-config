@@ -4,7 +4,7 @@
         enable = true;
         settings = {
             default_sessions = {
-                command = "${pkgs.greetd.tuigreet}/bin/tuigreet --remember --asterisks --cmd sway";
+                command = "${pkgs.tuigreet}/bin/tuigreet --remember --asterisks --cmd sway";
             };
         };
     };
