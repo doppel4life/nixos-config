@@ -30,7 +30,6 @@
             brightnessctl
             pulseaudio
             thunar
-            dolphin
             ];
 
     };
