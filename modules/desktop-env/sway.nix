@@ -2,6 +2,7 @@
 
     services.greetd = {
         enable = true;
+        vt = 2;
         settings = {
             default_sessions = {
                 command = "${pkgs.tuigreet}/bin/tuigreet --remember --asterisks --cmd sway";
