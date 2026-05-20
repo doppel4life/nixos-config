@@ -7,6 +7,6 @@
         grim
         slurp
         vlc
-        qbittorent
+        qbittorrent
     ];
 }
