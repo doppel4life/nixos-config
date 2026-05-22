@@ -36,6 +36,8 @@ output * bg /home/doppel/project/nixos-config/user_conf/doppel/sway/wall.png fil
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 ### Key bindings
 #
 # Basics:
