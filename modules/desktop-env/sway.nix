@@ -37,7 +37,7 @@
       # --- NEW: Explicitly route the portal requests ---
       config.common.default = "*";
       config.sway = {
-        default = [ "wlr" "gtk" ];
+        default = pkgs.lib.mkForce [ "wlr" "gtk" ];
       };
       # -------------------------------------------------
     };
