@@ -12,6 +12,10 @@
 
     programs.thunar.enable = true;
 
+    environment.systemPackages = with pkgs; [
+        xdg-utils
+    ];
+
     xdg.portal = {
       enable = true;
       wlr.enable = true;
