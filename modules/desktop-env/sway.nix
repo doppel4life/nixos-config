@@ -12,6 +12,22 @@
 
     programs.thunar.enable = true;
 
+    xdg.portal = {
+      enable = true;
+      wlr.enable = true;
+      
+      # Ensure the GTK portal is installed for file dialogs
+      extraPortals = with pkgs; [ 
+        xdg-desktop-portal-gtk 
+      ];
+
+      # Explicitly tell Sway which portals to use
+      config.common.default = "*";
+      config.sway = {
+        default = [ "wlr" "gtk" ];
+      };
+    };
+
     systemd.services.greetd.serviceConfig = {
         Type = "idle";
         StandardInput = "tty";
