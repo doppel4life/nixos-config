@@ -20,12 +20,6 @@
       extraPortals = with pkgs; [ 
         xdg-desktop-portal-gtk 
       ];
-
-      # Explicitly tell Sway which portals to use
-      config.common.default = "*";
-      config.sway = {
-        default = [ "wlr" "gtk" ];
-      };
     };
 
     systemd.services.greetd.serviceConfig = {
