@@ -10,6 +10,8 @@
         };
     };
 
+    programs.thunar.enable = true;
+
     systemd.services.greetd.serviceConfig = {
         Type = "idle";
         StandardInput = "tty";
@@ -29,7 +31,6 @@
             wofi
             brightnessctl
             pulseaudio
-            thunar
             ];
 
     };
