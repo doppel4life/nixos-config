@@ -6,9 +6,10 @@ images_size=32
 
 location=top
 layer=top
-xofffset=-10
+xoffset=-20
+yoffset = 10
 width=30%
-height=30%
+height=80%
 
 matching=fuzzy
 insensitive=true
