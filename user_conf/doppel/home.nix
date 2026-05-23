@@ -8,6 +8,18 @@
     #recursive = true;
     #};
 
+    programs.librewolf = {
+        settings = {
+            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        };
+        profiles.default = {
+            isDefault = true;
+            userChrome = ''
+              #TabsToolbar { visibility: collapse !important; }
+            '';
+      };
+    };
+
     home.file.".config/waybar" = {
         source = ./sway/waybar;
         recursive = true;
