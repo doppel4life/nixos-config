@@ -8,20 +8,7 @@
     #recursive = true;
     #};
 
-    programs.librewolf = {
-        enable = true;
-        settings = {
-            "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
-        };
-        profiles.default = {
-            isDefault = true;
-            userChrome = ''
-              #TabsToolbar { visibility: collapse !important; }
-            '';
-      };
-    };
-
-    home.file.".config/waybar" = {
+   home.file.".config/waybar" = {
         source = ./sway/waybar;
         recursive = true;
     };
