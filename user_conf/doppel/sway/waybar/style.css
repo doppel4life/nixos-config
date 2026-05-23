@@ -65,7 +65,7 @@
 }
 
 #network {
-    color : @blue;
+    color : @blue2;
 }
 
 #backlight {
@@ -77,11 +77,11 @@
 }
 
 #cpu {
-    color : @blue2;
+    color : @purple2;
 }
 
 #memory {
-    color : @blue2;
+    color : @purple2;
 }
 
 #custom-music {
