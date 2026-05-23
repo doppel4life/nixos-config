@@ -9,6 +9,7 @@
     #};
 
     programs.librewolf = {
+        enable = true;
         settings = {
             "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         };
