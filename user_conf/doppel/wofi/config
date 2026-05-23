@@ -6,8 +6,8 @@ images_size=32
 
 location= top_left
 layer=top
-xoffset=-10
-yoffset = 100
+xoffset=0
+yoffset = 30
 width=15%
 height=80%
 
