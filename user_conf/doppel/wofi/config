@@ -4,7 +4,7 @@ prompt=run...
 allow_images=true
 images_size=32
 
-location=top
+location= left
 layer=top
 xoffset=-20
 yoffset = 10
