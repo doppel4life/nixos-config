@@ -9,9 +9,4 @@
         vlc
         qbittorrent
     ];
-    environment.systemPackages = [
-        (pkgs.writeShellScriptBin "nvim-typst" ''
-            exec ${inputs.typst-nvim.packages.${pkgs.system}.typst-nvim}/bin/nvim "$@"
-        '')
-    ];
 }
