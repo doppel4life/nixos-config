@@ -313,6 +313,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1780243769,
+        "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nur": {
       "inputs": {
         "flake-parts": [
@@ -367,7 +383,8 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "typst-nvim": "typst-nvim"
       }
     },
     "stylix": {
@@ -494,6 +511,20 @@
         "repo": "base16-zed",
         "type": "github"
       }
+    },
+    "typst-nvim": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "path": "./user_conf/doppel/neovim-typst-config",
+        "type": "path"
+      },
+      "original": {
+        "path": "./user_conf/doppel/neovim-typst-config",
+        "type": "path"
+      },
+      "parent": []
     }
   },
   "root": "root",
