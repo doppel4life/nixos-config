@@ -10,7 +10,7 @@
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
     nvf.url = "github:NotAShelf/nvf";
-    typst-nvim.url = "path:./user_conf/doppel/neovim-typst-config";
+    typst-nvim.url = "github:doppel4life/neovim-typst-config";
   };
 
 

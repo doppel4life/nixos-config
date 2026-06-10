@@ -517,14 +517,18 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "path": "./user_conf/doppel/neovim-typst-config",
-        "type": "path"
+        "lastModified": 1781117069,
+        "narHash": "sha256-0c17ObdZzyt4RaXT5ieUbv/dQ9uMbxobAMFi1+mE/Kg=",
+        "owner": "doppel4life",
+        "repo": "neovim-typst-config",
+        "rev": "46550628cae53bd6e31baa0ddda715bfb99bea49",
+        "type": "github"
       },
       "original": {
-        "path": "./user_conf/doppel/neovim-typst-config",
-        "type": "path"
-      },
-      "parent": []
+        "owner": "doppel4life",
+        "repo": "neovim-typst-config",
+        "type": "github"
+      }
     }
   },
   "root": "root",
