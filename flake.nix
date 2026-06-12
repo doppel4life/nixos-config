@@ -11,6 +11,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     nvf.url = "github:NotAShelf/nvf";
     typst-nvim.url = "github:doppel4life/neovim-typst-config";
+    dev-nvim.url = "github:doppel4life/dev-nvim";
   };
 
 
