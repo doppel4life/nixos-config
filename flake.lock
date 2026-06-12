@@ -73,11 +73,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1781299596,
-        "narHash": "sha256-ahsfkm/H2srkXTci/nPta11L+/yImoMMYIX2ImcIaPM=",
+        "lastModified": 1781300789,
+        "narHash": "sha256-xK74I6EGWHCqCfQNEmle7p8kIFwJQOQGlY9NnzPli+I=",
         "owner": "doppel4life",
         "repo": "dev-nvim",
-        "rev": "1d1385f7f8401fab090f26cca0d3a4b3524a09bc",
+        "rev": "2b4b7adf8176997f8c7758a495522fb55d3631fa",
         "type": "github"
       },
       "original": {
