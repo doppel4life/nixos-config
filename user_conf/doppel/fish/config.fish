@@ -3,7 +3,7 @@ set -g fish_greeting
 function fish_prompt
     if test -n "$NIX_DEVELOP_NAME"
         set_color brblue
-        printf "[❄ %s ] " $NIX_DEVELOP_NAME
+        printf "[❄ %s] " $NIX_DEVELOP_NAME
         set_color normal
     end
 	set_color brcyan
